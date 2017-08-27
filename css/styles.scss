@@ -1,0 +1,381 @@
+---
+---
+/*
+Many thanks to David Malan. https://github.com/cs50/manual50
+*/
+
+:root {
+    --header-bg-color: #EE786D;
+    --navbar-bg-color: #C5645C;
+    --light-txt-color: #FFF2E1;
+    --nav-link-color: #22557D;
+    --content-bg-color: #22557D;
+    --highlight-txt-color: #EE786D;
+    --post-bg-color: #4D3054;
+}
+
+/*
+gem install bootstrap-sass -v 3.3.7
+curl -o _sass/_bootstrap-custom.scss https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/_bootstrap.scss # https://github.com/twbs/bootstrap-sass#sass
+*/
+@import 'bootstrap-custom';
+
+/*
+gem install rouge
+rougify style github > _sass/syntax.css
+*/
+@import "rouge";
+
+/*
+wget https://github.com/primer/primer-css/archive/master.zip
+unzip master.zip
+cd primer-css-master
+npm install --save primer-css
+cp node_modules/primer-css/build.css _sass/
+*/
+@import "build";
+
+/* position title above TOC if small screen */
+/* TODO: use Sass to figure out 768px via variable */
+@media (max-width: 768px) {
+    .col-sm-9 h1 {
+        display: none; /* hide other title */
+    }
+
+    .dis-nav {
+        display: none;
+        visibility: collapse;
+    }
+
+    .pics {
+        display: none;
+    }
+
+    .welcome-txt {
+        display: none;
+    }
+
+    .container-fluid .markdown-body {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .toc .title {
+        white-space: nowrap; /* confine to one line so title doesn't invisibly wrap */
+        visibility: hidden; /* hide title above TOC but preserve its height */
+    }
+
+    .dropdown {
+        display: none;
+    }
+}
+.col-sm-12 nav + h1[id] {
+    display: none;
+}
+
+/* position anchors below navbar-fixed-top */
+/* https://github.com/twbs/bootstrap/issues/1768#issuecomment-46519033 */
+*[id]:before {
+  content: " ";
+  display: block;
+  margin-top: -74px;
+  height: 74px; /* TODO: base 50px + 24px on variables */
+  visibility: hidden;
+}
+
+/* position columns below navbar-fixed-top */
+/* http://getbootstrap.com/components/#navbar-fixed-top */
+.col-sm-12 {
+    padding-top: 50px;
+    padding-left: 0px;
+}
+@media (min-width: 768px) {
+    .toc { /* scroll TOC independently */
+        bottom: 0;
+        left: 0;
+        overflow-y: auto;
+        position: fixed;
+        right: 0;
+        top: 15px;
+    }
+
+    .descript {
+        bottom: 0;
+        left: 0;
+        overflow-y: auto;
+        position: fixed;
+        right: 0;
+        top: 80px;
+    }
+}
+
+/* stylize TOC */
+nav {
+    font-size: smaller;
+}
+
+nav .navbar-form {
+    box-shadow: none;
+}
+
+.toc {
+    color: var(--light-txt-color);
+    background-color: var(--content-bg-color);
+}
+
+.toc a {
+    color: var(--light-txt-color);
+}
+
+.toc a:hover {
+    color: var(--highlight-txt-color);
+    text-decoration: none;
+}
+
+.toc ul {
+    list-style-type: none;
+}
+
+/* description */
+.descript {
+    color: var(--light-txt-color);
+    background-color: var(--content-bg-color);
+}
+
+.title {
+    font-size: 34px;
+}
+
+.abt-title{
+    font-size: 34px;
+    color: var(--header-bg-color);
+}
+
+/* navbar styles */
+.navbar {
+  background-color: var(--header-bg-color);
+  border-bottom: none;
+}
+
+.navbar-item {
+  float: left;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 30px;
+}
+
+.navbar-fixed-nav {
+  color: var(--light-txt-color);
+  top: 50px;
+  background-color: var(--navbar-bg-color);
+  border: none;
+  border-radius: 0px;
+  height: 30px;
+  width: 100%;
+  z-index: 1030;
+  position: fixed;
+}
+
+.navbar-fixed-nav a {
+  color: var(--light-txt-color);
+  text-decoration: none;
+}
+
+.navbar-fixed-nav a:hover {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+/* prevent word breaks */
+.markdown-body {
+    word-wrap: normal;
+}
+
+/* md format color */
+ul li a{
+    color: var(--highlight-txt-color);
+}
+
+ul li a:hover{
+    color: var(--header-bg-color);
+}
+
+/* front page post showcase */
+.col-home {
+  top: 110px;
+}
+
+.posts {
+  width: 25%;
+  z-index: 1020;
+}
+
+.recent {
+  text-align: center;
+  font-size: 24px;
+}
+
+.showcase {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: var(--post-bg-color);
+    overflow: hidden;
+}
+
+.showcase a, .showcase-list a {
+    color: var(--light-txt-color);
+}
+
+.showcase a:hover, .showcase-list a:hover {
+    color: var(--header-bg-color);
+    text-decoration: none;
+}
+
+.showcase h3, .showcase h5 {
+    position: relative;
+    color: var(--light-txt-color);
+    padding-top: 0.01%;
+    padding-left: 5%;
+    z-index: 100;
+}
+
+.showcase img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.displayer {
+    display: inline;
+    margin-left: 1em;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* post title */
+.post-title {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 85px;
+  background-color: var(--post-bg-color);
+  overflow: hidden;
+}
+
+.txt {
+    padding-left: 10px;
+    padding-top: 1px;
+    position: relative;
+    color: var(--light-txt-color);
+    font-size: 30px;
+    z-index: 100;
+}
+
+.txt .date {
+    position: relative;
+    font-size: 20px;
+    padding-top: 0px;
+    z-index: 100;
+}
+
+.post-title img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* index post lists */
+.showcase-list {
+    position: relative;
+    list-style: none;
+    max-width: 100%;
+    height: 150px;
+    color: var(--light-txt-color);
+    background-color: var(--post-bg-color);
+    overflow: hidden;
+}
+
+.showcase-list a,  {
+    position: relative;
+    padding-top: 1%;
+    padding-left: 1%;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.showcase-list .date {
+    position: relative;
+    padding-top: 2%;
+    padding-left: 1%;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.showcase-list img {
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+
+/* constrain to viewport */
+iframe, img {
+    max-width: 100%;
+}
+
+/* dropdown menu */
+.dropdown {
+  z-index: 1080;
+  float: right;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+    border: none;
+}
+
+.btn{
+    border-radius: 0px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: var(--light-txt-color);
+}
+
+.btn:hover{
+    background: none;
+    color: var(--post-bg-color);
+}
+
+.dropdown .btn:active {
+   background: var(--post-bg-color);
+   color: var(--light-txt-color);
+}
+
+.dropdown .btn:target {
+   background: var(--post-bg-color);
+   color: var(--light-txt-color);
+}
+
+/* about format */
+.resume {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: var(--header-bg-color);
+    color: var(--light-txt-color);
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.welcome {
+  height: auto;
+  width: 100%;
+}

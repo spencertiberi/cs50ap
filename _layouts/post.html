@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% assign image = "/assets/images/" | relative_url | append: page.image %}
+<div class="container-fluid post-title">
+    <img src="{{ image }}" onerror="this.style.display='none'">
+    <div class="txt">
+        {{page.title}}
+        <div class="date">
+            {% if page.categories contains 'problems' %}
+                Due: {{ page.due | date: "%A, %B %d, %Y %T" }}
+            {% elsif page.categories contains 'weeks' %}
+                Week of {{ page.weekof | date: "%A, %B %d, %Y" }}
+            {% else %}
+                {{ page.date | date: "%A, %B %d, %Y" }}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{{ content }}
