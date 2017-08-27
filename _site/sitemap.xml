@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://0.0.0.0:8080/problems/2017/08/20/pset0.html</loc>
+<lastmod>2017-08-20T04:03:01-04:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/weeks/2017/08/25/week0.html</loc>
+<lastmod>2017-08-25T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/materials/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/notes/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/problems/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/syllabus/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/weeks/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/about/</loc>
+</url>
+<url>
+<loc>http://0.0.0.0:8080/syllabus/academicintegrity.pdf</loc>
+<lastmod>2017-08-27T11:17:57-04:00</lastmod>
+</url>
+</urlset>
