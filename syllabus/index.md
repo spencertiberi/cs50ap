@@ -42,6 +42,7 @@ A quick note on grades as taken from Harvard's CS50 syllabus:
 ### Weighting
 
 #### Fall Semester
+
 |Section|Weighting|
 |--|--|
 |Problem Sets|50%|
@@ -50,6 +51,7 @@ A quick note on grades as taken from Harvard's CS50 syllabus:
 |Semester Exam|10%|
 
 #### Spring Semester
+
 |Section|Weighting|
 |--|--|
 |Problem Sets|50%|
