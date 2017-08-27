@@ -1,6 +1,6 @@
 ---
 layout: home
-title: compsci.one
+title: CS50 AP
 ---
 <div class="row">
     <img class="welcome" src="/assets/images/csonelvsigncrop.png">
