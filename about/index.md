@@ -33,6 +33,6 @@ description: Who's this Mr. Tiberi guy?
     </div>
     <div class="col-sm-3">
         <div class="abt-title"> Contact </div>
-            <a href="mailto:tiberi@belmonthill.org">tiberi@belmonthill.org</a>
+            <a class="markdown-body link" href="mailto:tiberi@belmonthill.org">tiberi@belmonthill.org</a>
     </div>
 </div>

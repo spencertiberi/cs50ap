@@ -3,13 +3,14 @@
 Many thanks to David Malan. https://github.com/cs50/manual50
 */
 :root {
-  --header-bg-color: #FF9169;
-  --navbar-bg-color: #FF9169;
+  --header-bg-color: #85D6E4;
+  --navbar-bg-color: #FFF2E1;
   --light-txt-color: #FFF2E1;
-  --nav-link-color: #6B462C;
-  --content-bg-color: #8EC6C5;
-  --highlight-txt-color: #FF9169;
-  --post-bg-color: #6B462C; }
+  --nav-item-color: #45240C;
+  --nav-link-color: #85D6E4;
+  --content-bg-color: #85D6E4;
+  --highlight-txt-color: #FD6720;
+  --post-bg-color: #45240C; }
 
 /*
 gem install bootstrap-sass -v 3.3.7
@@ -9174,7 +9175,7 @@ npm install --save primer-css
 cp node_modules/primer-css/build.css _sass/
 */
 :root {
-  --md-txt-color: #6B462C; }
+  --md-txt-color: #45240C; }
 
 .markdown-body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -9622,6 +9623,9 @@ nav .navbar-form {
   background-color: var(--header-bg-color);
   border-bottom: none; }
 
+.navbar-brand img {
+  width: 200px; }
+
 .navbar-item {
   float: left;
   padding: 10px 15px;
@@ -9630,7 +9634,7 @@ nav .navbar-form {
   height: 30px; }
 
 .navbar-fixed-nav {
-  color: var(--light-txt-color);
+  color: var(--nav-item-color);
   top: 50px;
   background-color: var(--navbar-bg-color);
   border: none;
@@ -9641,7 +9645,7 @@ nav .navbar-form {
   position: fixed; }
 
 .navbar-fixed-nav a {
-  color: var(--light-txt-color);
+  color: var(--nav-item-color);
   text-decoration: none; }
 
 .navbar-fixed-nav a:hover {
