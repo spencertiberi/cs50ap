@@ -8,6 +8,10 @@ layout: left
 
 Above all, the goal of CS50 AP is to empower you to become informed consumers and producers of technology through the lens of programming.
 
+## Contact
+
+[tiberi@belmonthill.org](mailto:tiberi@belmonthill.org)
+
 ## Location and Time
 
 CS50 AP will meet four days a week in the Amon-Meyer Science Center in **Room S-2** (lower level) during **B block** and in **Room S-5** (lower level) during **F block**.
