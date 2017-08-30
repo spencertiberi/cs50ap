@@ -10,11 +10,16 @@ Above all, the goal of CS50 AP is to empower you to become informed consumers an
 
 ## Contact
 
+(617)484-4410 ext. 273 <br>
 [tiberi@belmonthill.org](mailto:tiberi@belmonthill.org)
 
 ## Location and Time
 
 CS50 AP will meet four days a week in the Amon-Meyer Science Center in **Room S-2** (lower level) during **B block** and in **Room S-5** (lower level) during **F block**.
+
+## Extra Help
+
+I'm available for help on many X blocks, and right after the last class of the day. However, feel free to reach out to me to schedule time.
 
 ## Relationship between CS50 AP and College Board
 
@@ -101,9 +106,24 @@ Each problem will be assigned a grade out of 30 points using the following formu
 - Laptop
 - Notebook
 
-## Classroom Environment
+## Classroom Environment / Rules
 
-We will collectively determine appropriate community norms in class.
+### Late Work
+
+No late work will be allowed except in cases of absences due to:
+
+1. Illness
+2. Family Emergency
+
+Due dates will be posted on all assignments for clarity sake.
+
+### Collaboration
+
+A healthy collaborative atmosphere is crucial for a Computer Science classroom. Be sure to both keep academic integrity in mind and support one another.
+
+### Respect
+
+Be sure to respect the classroom, any materials we use, and, of course, each other.
 
 ## Academic Honesty
 The academic honesty policy of CS50 AP mirrors that of Harvard's.  It can be summed up as "be reasonable."
