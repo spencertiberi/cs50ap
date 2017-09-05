@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ""
-date: 201X-XX-XX 00:00:00 -0400
+title: "Hardware Continued"
+date: 2017-09-05 00:00:00 -0400
 categories: notes
 image:
 file:
@@ -9,7 +9,7 @@ file:
 
 # Description
 
-
+A look into the purpose of various motherboard components.
 
 ## Files
 
