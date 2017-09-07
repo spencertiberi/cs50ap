@@ -10,6 +10,8 @@ layout: default
         <div class="date">
             {% if page.categories contains 'problems' %}
                 Due: {{ page.due | date: "%A, %B %d, %Y %T" }}
+            {% elsif page.categories contains 'materials' %}
+                Due: {{ page.due | date: "%A, %B %d, %Y %T" }}
             {% elsif page.categories contains 'weeks' %}
                 Week of {{ page.weekof | date: "%A, %B %d, %Y" }}
             {% else %}
