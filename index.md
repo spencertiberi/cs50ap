@@ -3,7 +3,7 @@ layout: home
 title: CS50 AP
 ---
 <div class="row">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScW3evxyCWhC716SRYCZrjW0yoGwB5TGVQ5bUDvMiyk-vyOhQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <h1>Welcome to CS50 AP!</h1>
 </div>
 
 <div style="font-size:12px;">
