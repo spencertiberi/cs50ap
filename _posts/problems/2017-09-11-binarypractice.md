@@ -2,7 +2,7 @@
 layout: problempost
 title: "Binary Practice"
 date: 2017-09-11 00:00:00 -0400
-due: 2017-09-12 08:00:00 -0400
+due: 2017-09-12 08:00:00
 categories: problems
 image: matrix.jpg
 ---
