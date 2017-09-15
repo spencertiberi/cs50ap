@@ -82,9 +82,9 @@ If you include an interview source, include the name of the person you interview
 Include citations for the sources you used, and number each source accordingly.
 Each source must be relevant, credible, and easily accessed.
 
-# Scoring Guidelines
+## Scoring Guidelines
 
-[https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles](https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles)
+For rubrics and examples check [https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles](https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles)!
 
-# Submission for This Class
+## Submission for This Class
 Upload both your Computational Artifact (.pdf, .mp4, etc.) and your Written Responses (.pdf only!) to GitHub under a new branch called **“explore.”**
