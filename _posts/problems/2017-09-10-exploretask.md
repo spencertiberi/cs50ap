@@ -81,3 +81,10 @@ For each print source, include the author, title of excerpt/article and magazine
 If you include an interview source, include the name of the person you interviewed, the date on which the interview occurred, and the person’s position in the field.
 Include citations for the sources you used, and number each source accordingly.
 Each source must be relevant, credible, and easily accessed.
+
+# Scoring Guidelines
+
+[https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles](https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles)
+
+# Submission for This Class
+Upload both your Computational Artifact (.pdf, .mp4, etc.) and your Written Responses (.pdf only!) to GitHub under a new branch called **“explore.”**
