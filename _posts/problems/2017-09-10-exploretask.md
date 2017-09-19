@@ -2,7 +2,7 @@
 layout: problempost
 title: "AP CSP Explore Task"
 date: 2017-09-10 00:00:00 -0400
-due: 2017-09-18 23:59:59 -0400
+due: 2017-09-26 23:59:59
 categories: problems
 image: dora.jpg
 ---
