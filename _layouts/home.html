@@ -15,9 +15,16 @@ layout: default
                   {% if forloop.index <= max_recent %}
                       <li>
                           <div class="showcase">
-                              <img src="assets/images/{{ post.image }}" onerror="this.style.display='none'">
-                              <h3><a href=".{{ post.url }}"> {{ post.title }} </a></h3>
-                              <h5> Category: {{post.categories}} </h5>
+                              {% if post.categories contains 'materials' %}
+                                  <a href="{{ post.outurl }}" target="_blank">
+                              {% else %}
+                                  <a href="{{ post.url }}">
+                              {% endif %}
+                                      <img src="assets/images/{{ post.image }}" onerror="this.style.display='none'">
+
+                                          <h3> {{ post.title }} </h3>
+                                          <h5> Category: {{post.categories}} </h5>
+                              </a>
                           </div>
                       </li>
                   {% endif %}

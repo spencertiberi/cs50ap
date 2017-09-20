@@ -225,6 +225,7 @@ ul li a:hover{
 
 .showcase {
     position: relative;
+    list-style: none;
     width: 100%;
     height: 100px;
     background-color: var(--post-bg-color);
@@ -304,7 +305,7 @@ ul li a:hover{
     overflow: hidden;
 }
 
-.showcase-list a,  {
+.floater {
     position: relative;
     padding-top: 1%;
     padding-left: 1%;
@@ -312,12 +313,8 @@ ul li a:hover{
     z-index: 100;
 }
 
-.showcase-list .date {
-    position: relative;
-    padding-top: 2%;
-    padding-left: 1%;
+.date {
     font-size: 18px;
-    z-index: 100;
 }
 
 .showcase-list img {
