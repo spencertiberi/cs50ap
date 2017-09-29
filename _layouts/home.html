@@ -15,7 +15,9 @@ layout: default
                   {% if forloop.index <= max_recent %}
                       <li>
                           <div class="showcase">
-                              {% if post.categories contains 'materials' %}
+                              {% if post.subcategories contains 'refsheet' %}
+                                  <a href="{{ post.outurl }}" target="_blank">
+                              {% else if post.subcategories contains 'cs50' %}
                                   <a href="{{ post.outurl }}" target="_blank">
                               {% else %}
                                   <a href="{{ post.url }}">
