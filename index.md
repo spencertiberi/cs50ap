@@ -15,7 +15,11 @@ Disclaimer: This is home of CS50 AP at Belmont Hill School. For the official Har
     {% for post in problems %}
         {% if post.due > site.time %}
             <li>
-                <a href="..{{ post.url }}">
+                {% if post.subcategories contains 'cs50' %}
+                    <a href="{{ post.outurl }}" target="_blank">
+                {% else %}
+                    <a href="..{{ post.url }}">
+                {% endif %}
                     <h3>
                         {{ post.title }}
                     </h3>
