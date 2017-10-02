@@ -1,0 +1,149 @@
+/* global body padding */
+body {
+  padding-top:    20px;
+  padding-bottom: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top:    50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* responsive tables
+ * adapted from https://codepen.io/anon/pen/QwPVNW */
+
+table {
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr {
+    border: 0px;
+    padding: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-top: 0px !important;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+
+/* global spacing overrides */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar-fixed-top,
+.navbar-static-top {
+  border-bottom: 0;
+}
+
+.sidebar-title {
+    font-size: 36px;
+}
+
+.sidebar-title:focus, .sidebar-title:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+.form-control:focus, output:focus {
+    color: #24292e;
+}
+
+/* axis inputs should be short */
+.axis-input {
+    width: 50px;
+}
+
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.score-box {
+    width: 90px;
+}
+
+.bottom-pad {
+    margin-bottom: 5px !important;
+}
+
+.rotate-heading {
+    width: 50px;
+    transform:
+        translate(10px, -15px)
+        rotate(305deg);
+}
+
+/* Disable border around table */
+.table {
+    border: 0px;
+}
+
+/* For drag handler buttons */
+.btn-nocolor, .btn-nocolor:hover, .btn-nocolor:active {
+    border: 0px;
+    background-color: white;
+}
+
+.problem-link-disabled {
+    pointer-events: none;
+    color: black;
+}
+
+/* Don't auto-capitalize navigation headers */
+.nav-header {
+    text-transform: none !important;
+}
