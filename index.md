@@ -27,5 +27,3 @@ title: CS50 AP
         {% endif %}
     {% endfor %}
 </ul>
-
-![Las Vegas](assets/images/lvpaint.jpg)
