@@ -13,12 +13,12 @@
 
         <meta property="og:description" content="CS50 AP at Belmont Hill School."/>
         <meta property="og:image" content="TODO"/>
-        <meta property="og:title" content="CS50 AP"/>
+        <meta property="og:title" content="Grades"/>
 
         <link rel="icon" href="/bhsfavicon.png"/>
         <link rel="stylesheet" href="/css/styles.css"/>
 
-        <title>CS50 AP</title>
+        <title>Grades</title>
 
     </head>
 
@@ -92,168 +92,87 @@
                 </div>
             </div>
             <div class="container-fluid markdown-body">
+                <div class="row">
+    <div class="col-sm-3 toc">
+        <div class="title">
+            <!-- https://allejo.io/blog/a-jekyll-toc-in-liquid-only/ -->
+            <!-- preserve <code/> in titles -->
+            
+            
+<p>Grades</p>
+
+
+        </div>
+            <h3>Contents</h3>
+        <nav>
+                <!-- https://allejo.io/blog/a-jekyll-toc-in-liquid-only/ -->
+                
+                
                 
 
-<div class="row">
-    <div class="col-sm-8">
-            <h3 id="upcoming-due-dates">Upcoming Due Dates</h3>
-
-<ul style="list-style: none">
-    
-
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
+<ul>
+  <li><a href="#problem">Problem</a></li>
+  <li><a href="#distribution-code">Distribution Code</a></li>
 </ul>
 
+
+        </nav>
     </div>
-    <div class="col-sm-4">
-        <div class="recent"> Recent Updates </div>
-          <ul class="displayer">
-              
-                  
-                      <li>
-                          <div class="showcase">
-                              
-                                  <a href="/weeks/2017/10/22/week8.html">
-                              
-                                      <img src="assets/images/happy.png" onerror="this.style.display='none'">
+    <div class="col-sm-9 col-sm-offset-3">
+        
+<div class="container-fluid post-title">
+    <img src="/assets/images/throwsomeds.jpg" onerror="this.style.display='none'">
+    <div class="txt">
+        Grades
+        <div class="date">
+            
+                Sunday, October 22, 2017
+            
+        </div>
+    </div>
+</div>
+<h1 id="grades">Grades</h1>
 
-                                          <h3> Week 8 </h3>
-                                          <h5> Category: weeks </h5>
-                                  </a>
-                          </div>
-                      </li>
-                  
-              
-                  
-                      <li>
-                          <div class="showcase">
-                              
-                                  <a href="/practice/2017/10/22/grades.html">
-                              
-                                      <img src="assets/images/throwsomeds.jpg" onerror="this.style.display='none'">
+<h2 id="problem">Problem</h2>
+<p>There’s a bug in this program such that if the user inputs the number 95, all four statements print out:</p>
 
-                                          <h3> Grades </h3>
-                                          <h5> Category: practice </h5>
-                                  </a>
-                          </div>
-                      </li>
-                  
-              
-                  
-                      <li>
-                          <div class="showcase">
-                              
-                                  <a href="/notes/2017/10/18/review.html">
-                              
-                                      <img src="assets/images/carnival.jpg" onerror="this.style.display='none'">
+<div class="highlighter-rouge"><pre class="highlight"><code>~/workspace/ $ ./grades
+Enter a valid grade: 95
+You got an A!
+You got a B!
+You got a C!
+You got a D!
+</code></pre>
+</div>
 
-                                          <h3> KC 1 Review </h3>
-                                          <h5> Category: notes </h5>
-                                  </a>
-                          </div>
-                      </li>
-                  
-              
-                  
-                      <li>
-                          <div class="showcase">
-                              
-                                  <a href="/weeks/2017/10/16/week7.html">
-                              
-                                      <img src="assets/images/cavscelts.jpg" onerror="this.style.display='none'">
+<p>Modify the program such that if the user inputs the number 95, only the correct statement will print out:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>~/workspace/ $ ./grades
+Enter a valid grade: 95
+You got an A!
+</code></pre>
+</div>
 
-                                          <h3> Week 7 </h3>
-                                          <h5> Category: weeks </h5>
-                                  </a>
-                          </div>
-                      </li>
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-                  
-              
-          </ul>
+<h2 id="distribution-code">Distribution Code</h2>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">get_int</span><span class="p">(</span><span class="s">"Enter a valid grade (between 60 and 100): "</span><span class="p">);</span>
+
+    <span class="c1">// TODO: fix the bug!
+</span>    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"You got an A!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"You got a B!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"You got a C!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"You got a D!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+
     </div>
 </div>
 
