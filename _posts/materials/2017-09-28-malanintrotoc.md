@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CS50 Intro to C"
+title: "David Malan: Intro to C"
 date: 2017-09-28 00:00:00 -0400
 categories: materials
 subcategories: videos

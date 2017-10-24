@@ -1,7 +1,7 @@
 ---
 title: "Materials"
 layout: descript
-description: Materials to read or view
+description: Materials to read or view <br><br> <a href="./#videos">Videos</a> <br> <a href="./#reference-sheets">Reference Sheets</a>
 ---
 
 ## Videos
