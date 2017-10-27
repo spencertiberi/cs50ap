@@ -1,0 +1,12 @@
+---
+layout: problempost
+title: "Initials (More Comfortable)"
+date: 2017-10-27 00:08:00 -0400
+due: 2017-11-2 23:59:59
+categories: problems
+subcategories: cs50
+image: fall3.jpg
+outurl: https://docs.cs50.net/2017/ap/problems/initials/more/initials.html
+---
+
+# [Click for the spec!]({{page.outurl}})
