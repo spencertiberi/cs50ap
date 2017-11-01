@@ -1,7 +1,7 @@
 ---
 layout: problempost
 title: "Multiples"
-date: 2017-10-31 00:00:00 -0400
+date: 2017-10-30 00:00:00 -0400
 categories: practice
 image: bunnies.png
 ---
