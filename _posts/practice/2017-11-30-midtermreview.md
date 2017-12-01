@@ -6,6 +6,11 @@ categories: practice
 image: books2.jpg
 ---
 
+## Structure
+- 5-10 multiple choice
+- 5-10 knowledge nugget-type questions
+- 5-10 written response questions
+
 ## Concepts
 - hardware
   - CPU
