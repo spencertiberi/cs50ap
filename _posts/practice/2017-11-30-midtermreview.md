@@ -7,6 +7,14 @@ image: books2.jpg
 ---
 
 ## Concepts
+- hardware
+  - CPU
+  - GPU
+  - Memory
+    - RAM
+    - cache
+    - HDD
+  - binary
 - pseudocode
 - Scratch
   - variables
