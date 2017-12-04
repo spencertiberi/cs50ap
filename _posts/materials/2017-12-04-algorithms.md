@@ -4,7 +4,7 @@ title: "David Malan: Searching and Sorting"
 date: 2017-12-03 00:00:00 -0400
 categories: materials
 subcategories: videos
-image: david1.jpg
+image: 
 outurl: materials/2017/12/04/algorithms.html
 ---
 
