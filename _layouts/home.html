@@ -5,11 +5,12 @@ layout: default
 {% assign max_recent = 4 %}
 
 <div class="row">
+  
     <div class="col-sm-8">
             {{ content }}
     </div>
     <div class="col-sm-4">
-        <div class="recent"> Recent Updates </div>
+        <div class="recent"> Recent Posts </div>
           <ul class="displayer">
               {% for post in site.posts %}
                   {% if forloop.index <= max_recent %}

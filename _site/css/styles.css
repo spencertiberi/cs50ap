@@ -9715,6 +9715,9 @@ ul li a:hover {
   width: 100%;
   height: auto; }
 
+.showcase:hover {
+  background-color: var(--highlight-txt-color); }
+
 .displayer {
   display: inline;
   margin-left: 1em;
@@ -9821,3 +9824,9 @@ iframe, img {
 .welcome {
   height: auto;
   width: 100%; }
+
+.half-filler {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
