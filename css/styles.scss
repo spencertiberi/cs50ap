@@ -8,7 +8,7 @@ Many thanks to David Malan. https://github.com/cs50/manual50
     --header-bg-color: #F35D42;
     --navbar-bg-color: #F35D42;
     --light-txt-color: #FFF2E1;
-    --nav-item-color: #F3B542;
+    --nav-item-color: #FFF2E1;
     --nav-link-color: #FFF2E1;
     --content-bg-color: #983A29;
     --highlight-txt-color: #F68571;
@@ -240,7 +240,7 @@ ul li a:hover{
   font-size: 24px;
 }
 
-.showcase {
+.showcase, .showcase-list {
     position: relative;
     list-style: none;
     width: 100%;
@@ -253,10 +253,13 @@ ul li a:hover{
     color: var(--light-txt-color);
 }
 
+/*
 .showcase a:hover, .showcase-list a:hover {
     color: var(--header-bg-color);
     text-decoration: none;
 }
+*/
+
 
 .showcase h3, .showcase h5 {
     position: relative;
@@ -272,7 +275,7 @@ ul li a:hover{
     height: auto;
 }
 
-.showcase:hover {
+.showcase:hover, .showcase-list:hover {
     background-color: var(--highlight-txt-color);
 }
 
