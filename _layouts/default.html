@@ -77,11 +77,11 @@
                     <div class="col-sm-12">
                         <nav class="navbar-fixed-nav">
                               <a class="navbar-item" href="{{ "/" | relative_url }}"><span {% if page.url == "/" %} class="active" {% endif %}>home</span></a>
-                              <a class="navbar-item" href="{{ "/weeks" | relative_url }}"><span {% if page.url == "/weeks/" %} class="active" {% endif %}>weeks</span></a>
-                              <a class="navbar-item" href="{{ "/problems" | relative_url }}"><span {% if page.url == "/problems/" %} class="active" {% endif %}>problems</span></a>
-                              <a class="navbar-item" href="{{ "/materials" | relative_url }}"><span {% if page.url == "/materials/" %} class="active" {% endif %}>materials</span></a>
-                              <a class="navbar-item" href="{{ "/notes" | relative_url }}"><span {% if page.url == "/notes/" %} class="active" {% endif %}>notes</span></a>
-                              <a class="navbar-item" href="{{ "/practice" | relative_url }}"><span {% if page.url == "/practice/" %} class="active" {% endif %}>practice</span></a>
+                              <a class="navbar-item" href="{{ "/weeks" | relative_url }}"><span {% if page.url contains "/weeks/" %} class="active" {% endif %}>weeks</span></a>
+                              <a class="navbar-item" href="{{ "/problems" | relative_url }}"><span {% if page.url contains "/problems/" %} class="active" {% endif %}>problems</span></a>
+                              <a class="navbar-item" href="{{ "/materials" | relative_url }}"><span {% if page.url contains "/materials/" %} class="active" {% endif %}>materials</span></a>
+                              <a class="navbar-item" href="{{ "/notes" | relative_url }}"><span {% if page.url contains "/notes/" %} class="active" {% endif %}>notes</span></a>
+                              <a class="navbar-item" href="{{ "/practice" | relative_url }}"><span {% if page.url contains "/practice/" %} class="active" {% endif %}>practice</span></a>
                               <a class="navbar-item" href="{{ "/about" | relative_url }}"><span {% if page.url == "/about/" %} class="active" {% endif %}>about</span></a>
                               <a class="navbar-item" href="{{ "/syllabus" | relative_url }}"><span {% if page.url == "/syllabus/" %} class="active" {% endif %}>syllabus</span></a>
                               <a class="navbar-item" href="https://cs50.io" target="_blank">IDE</a>
