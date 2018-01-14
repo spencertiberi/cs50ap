@@ -8,17 +8,17 @@
     <head>
 
         <meta charset="utf-8"/>
-        <meta name="description" content="Practice problems for extra... well... practice. 😅">
+        <meta name="description" content="CS50 AP at Belmont Hill School.">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <meta property="og:description" content="Practice problems for extra... well... practice. 😅"/>
+        <meta property="og:description" content="CS50 AP at Belmont Hill School."/>
         <meta property="og:image" content="TODO"/>
-        <meta property="og:title" content="Practice"/>
+        <meta property="og:title" content="Sigma"/>
 
         <link rel="icon" href="/bhsfavicon.png"/>
         <link rel="stylesheet" href="/css/styles.css"/>
 
-        <title>Practice</title>
+        <title>Sigma</title>
 
     </head>
 
@@ -93,108 +93,79 @@
             </div>
             <div class="container-fluid markdown-body">
                 <div class="row">
-    <div class="col-sm-3 descript">
+    <div class="col-sm-3 toc">
         <div class="title">
             <!-- https://allejo.io/blog/a-jekyll-toc-in-liquid-only/ -->
             <!-- preserve <code/> in titles -->
-            <!--  -->
-            Practice
-            <!-- 
- -->
+            
+            
+
         </div>
-        <div class= "descript-txt">
-            Practice problems for extra... well... practice. 😅
-        </div>
+            <h3>Contents</h3>
+        <nav>
+                <!-- https://allejo.io/blog/a-jekyll-toc-in-liquid-only/ -->
+                
+                
+                
+
+<ul>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#problem">Problem</a></li>
+  <li><a href="#distribution-code">Distribution Code</a></li>
+</ul>
+
+
+        </nav>
     </div>
     <div class="col-sm-9 col-sm-offset-3">
-        <ul class="displayer">
-    
-    
         
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2018/01/08/Sigma.html">
-                    <img src="/assets/images/" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Sigma
-                        <br />
-                        <div class="date">Monday, January 08, 2018</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-        
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2017/11/30/midtermreview.html">
-                    <img src="/assets/images/books2.jpg" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Midterm Review
-                        <br />
-                        <div class="date">Thursday, November 30, 2017</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-        
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2017/10/30/verify.html">
-                    <img src="/assets/images/tornado.jpg" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Verify
-                        <br />
-                        <div class="date">Monday, October 30, 2017</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-        
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2017/10/30/multiples.html">
-                    <img src="/assets/images/bunnies.png" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Multiples
-                        <br />
-                        <div class="date">Monday, October 30, 2017</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-        
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2017/10/24/quidditch.html">
-                    <img src="/assets/images/quidditch.jpg" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Quidditch
-                        <br />
-                        <div class="date">Tuesday, October 24, 2017</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-        
-        <li>
-            <div class="showcase-list">
-                <a href="../practice/2017/10/22/grades.html">
-                    <img src="/assets/images/throwsomeds.jpg" onerror="this.style.display='none'" />
-                    <div class="floater">
-                        Grades
-                        <br />
-                        <div class="date">Sunday, October 22, 2017</div>
-                    </div>
-                </a>
-            </div>
-        </li>
-    
-</ul>
+<div class="container-fluid post-title">
+    <img src="/assets/images/" onerror="this.style.display='none'">
+    <div class="txt">
+        Sigma
+        <div class="date">
+            
+                Monday, January 08, 2018
+            
+        </div>
+    </div>
+</div>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Conditions; Functions</p>
+
+<h2 id="problem">Problem</h2>
+<p>Write a recursive function called sigma with a prototype of <code class="highlighter-rouge">int sigma (int n);</code> that adds the numbers 1 through n and returns the sum. Example output:</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>~/workspace/ <span class="nv">$ </span>./sigma
+Please enter a positive integer: 5
+The result of sigma<span class="o">(</span>5<span class="o">)</span> is 15
+</code></pre>
+</div>
+
+<h2 id="distribution-code">Distribution Code</h2>
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
+</span>
+<span class="kt">int</span> <span class="n">sigma</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// take in array size and elements from user
+</span>    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">get_int</span><span class="p">(</span><span class="s">"Please enter a positive integer: "</span><span class="p">);</span>
+
+    <span class="c1">// print the result
+</span>    <span class="n">printf</span><span class="p">(</span><span class="s">"The result of sigma(%i) is %i"</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">sigma</span><span class="p">(</span><span class="n">n</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">// TODO: implement sigma(n) recursively
+</span><span class="kt">int</span> <span class="nf">sigma</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// TODO: base case
+</span>
+    <span class="c1">// TODO: recursive case
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
 
     </div>
 </div>

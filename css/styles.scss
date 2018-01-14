@@ -5,14 +5,16 @@ Many thanks to David Malan. https://github.com/cs50/manual50
 */
 
 :root {
-    --header-bg-color: #85D6E4;
-    --navbar-bg-color: #FFF2E1;
+    --header-bg-color: #F35D42;
+    --navbar-bg-color: #F35D42;
     --light-txt-color: #FFF2E1;
-    --nav-item-color: #45240C;
-    --nav-link-color: #85D6E4;
-    --content-bg-color: #85D6E4;
-    --highlight-txt-color: #FD6720;
-    --post-bg-color: #45240C;
+    --nav-item-color: #F3B542;
+    --nav-link-color: #FFF2E1;
+    --content-bg-color: #983A29;
+    --highlight-txt-color: #F68571;
+    --post-bg-color: #F3B542;
+    --bg: #5B2319;
+
 }
 
 /*
@@ -113,6 +115,11 @@ cp node_modules/primer-css/build.css _sass/
     }
 }
 
+body {
+  background-color: var(--bg);
+}
+
+
 /* stylize TOC */
 nav {
     font-size: smaller;
@@ -144,6 +151,14 @@ nav .navbar-form {
 .descript {
     color: var(--light-txt-color);
     background-color: var(--content-bg-color);
+    a {
+      color: var(--light-txt-color);
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: var(--highlight-txt-color);
+    }
 }
 
 .title {
@@ -202,11 +217,12 @@ nav .navbar-form {
 
 /* md format color */
 ul li a{
-    color: var(--highlight-txt-color);
+    color: var(--light-txt-color);
 }
 
 ul li a:hover{
-    color: var(--header-bg-color);
+  text-decoration: none;
+    color: var(--highlight-txt-color);
 }
 
 /* front page post showcase */

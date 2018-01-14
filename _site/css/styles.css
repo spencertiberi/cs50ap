@@ -3,14 +3,15 @@
 Many thanks to David Malan. https://github.com/cs50/manual50
 */
 :root {
-  --header-bg-color: #85D6E4;
-  --navbar-bg-color: #FFF2E1;
+  --header-bg-color: #F35D42;
+  --navbar-bg-color: #F35D42;
   --light-txt-color: #FFF2E1;
-  --nav-item-color: #45240C;
-  --nav-link-color: #85D6E4;
-  --content-bg-color: #85D6E4;
-  --highlight-txt-color: #FD6720;
-  --post-bg-color: #45240C; }
+  --nav-item-color: #F3B542;
+  --nav-link-color: #FFF2E1;
+  --content-bg-color: #983A29;
+  --highlight-txt-color: #F68571;
+  --post-bg-color: #F3B542;
+  --bg: #5B2319; }
 
 /*
 gem install bootstrap-sass -v 3.3.7
@@ -9175,8 +9176,9 @@ npm install --save primer-css
 cp node_modules/primer-css/build.css _sass/
 */
 :root {
-  --md-txt-color: #45240C;
-  --md-tbl-color: #85D6E4;
+  --md-txt-color: #FFF2E1;
+  --md-tbl-color: #F35D42;
+  --md-tbl-color2: #1E0C08;
   --md-lighttxt-color: #FFF2E1; }
 
 .markdown-body {
@@ -9230,7 +9232,7 @@ cp node_modules/primer-css/build.css _sass/
 
 .markdown-body blockquote {
   padding: 0 1em;
-  color: #6a737d;
+  color: #var --md-lighttxt-color;
   border-left: 0.25em solid #dfe2e5; }
 
 .markdown-body blockquote > :first-child {
@@ -9339,7 +9341,7 @@ cp node_modules/primer-css/build.css _sass/
   border: 0px solid var(--md-txt-color); }
 
 .markdown-body table tr {
-  background-color: #fff;
+  background-color: #var --md-tbl-color2;
   border-top: 0px solid #c6cbd1;
   color: var(--md-txt-color); }
 
@@ -9587,6 +9589,9 @@ cp node_modules/primer-css/build.css _sass/
     position: fixed;
     right: 0;
     top: 80px; } }
+body {
+  background-color: var(--bg); }
+
 /* stylize TOC */
 nav {
   font-size: smaller; }
@@ -9612,6 +9617,11 @@ nav .navbar-form {
 .descript {
   color: var(--light-txt-color);
   background-color: var(--content-bg-color); }
+  .descript a {
+    color: var(--light-txt-color); }
+  .descript a:hover {
+    text-decoration: none;
+    color: var(--highlight-txt-color); }
 
 .title {
   font-size: 34px; }
@@ -9660,10 +9670,11 @@ nav .navbar-form {
 
 /* md format color */
 ul li a {
-  color: var(--highlight-txt-color); }
+  color: var(--light-txt-color); }
 
 ul li a:hover {
-  color: var(--header-bg-color); }
+  text-decoration: none;
+  color: var(--highlight-txt-color); }
 
 /* front page post showcase */
 .col-home {
