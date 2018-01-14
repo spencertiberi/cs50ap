@@ -119,6 +119,9 @@ body {
   background-color: var(--bg);
 }
 
+.active {
+  color: var(--nav-link-color);
+}
 
 /* stylize TOC */
 nav {
