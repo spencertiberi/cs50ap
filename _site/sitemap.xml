@@ -319,10 +319,13 @@
 <loc>http://0.0.0.0:8080/weeks/</loc>
 </url>
 <url>
+<loc>http://0.0.0.0:8080/about/</loc>
+</url>
+<url>
 <loc>http://0.0.0.0:8080/</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:8080/about/</loc>
+<loc>http://0.0.0.0:8080/template.html</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:8080/assets/images/CS50.me_%20Scores.htm</loc>

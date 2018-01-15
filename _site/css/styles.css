@@ -9677,7 +9677,7 @@ ul li a {
 
 ul li a:hover {
   text-decoration: none;
-  color: var(--highlight-txt-color); }
+  color: var(--bg); }
 
 /* front page post showcase */
 .col-home {
@@ -9835,3 +9835,6 @@ iframe, img {
   margin-left: auto;
   margin-right: auto;
   width: 50%; }
+
+.addeventatc button {
+  background-color: #777; }
