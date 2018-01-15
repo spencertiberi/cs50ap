@@ -14,20 +14,20 @@ layout: default
               {% for post in site.posts %}
                   {% if forloop.index <= max_recent %}
                       <li>
-                          <div class="showcase">
-                              {% if post.subcategories contains 'refsheet' %}
-                                  <a href="{{ post.outurl }}" target="_blank">
-                              {% elsif post.subcategories contains 'cs50' %}
-                                  <a href="{{ post.outurl }}" target="_blank">
-                              {% else %}
-                                  <a href="{{ post.url }}">
-                              {% endif %}
-                                      <img src="assets/images/{{ post.image }}" onerror="this.style.display='none'">
+                          {% if post.subcategories contains 'refsheet' %}
+                              <a href="{{ post.outurl }}" target="_blank">
+                          {% elsif post.subcategories contains 'cs50' %}
+                              <a href="{{ post.outurl }}" target="_blank">
+                          {% else %}
+                              <a href="{{ post.url }}">
+                          {% endif %}
+                                  <div class="showcase">
+                                  <!--<img src="assets/images/{{ post.image }}" onerror="this.style.display='none'">-->
 
-                                          <h3> {{ post.title }} </h3>
-                                          <h5> Category: {{post.categories}} </h5>
-                                  </a>
-                          </div>
+                                      <h3> {{ post.title }} </h3>
+                                      <h5> Category: {{post.categories}} </h5>
+                                  </div>
+                              </a>
                       </li>
                   {% endif %}
               {% endfor %}
