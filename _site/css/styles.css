@@ -9589,6 +9589,10 @@ cp node_modules/primer-css/build.css _sass/
     position: fixed;
     right: 0;
     top: 80px; } }
+button .dropdown-toggle {
+  background-color: var(--nav-link-color);
+  color: var(--light-txt-color); }
+
 body {
   background-color: var(--bg); }
 

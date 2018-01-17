@@ -115,6 +115,11 @@ cp node_modules/primer-css/build.css _sass/
     }
 }
 
+button .dropdown-toggle {
+  background-color: var(--nav-link-color);
+  color: var(--light-txt-color);
+}
+
 body {
   background-color: var(--bg);
 }
