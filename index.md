@@ -2,20 +2,6 @@
 layout: home
 title: CS50 AP
 ---
-<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
-
-<!-- AddEvent Settings -->
-<script type="text/javascript">
-window.addeventasync = function(){
-    addeventatc.settings({
-        appleical  : {show:true, text:"Apple Calendar"},
-        google     : {show:true, text:"Google <em>(online)</em>"},
-        outlook    : {show:false, text:"Outlook"},
-        outlookcom : {show:false, text:"Outlook.com <em>(online)</em>"},
-        yahoo      : {show:false, text:"Yahoo <em>(online)</em>"}
-    });
-};
-</script>
 
 <div class="recent"> Upcoming Due Dates </div>
 <ul class="displayer" style="list-style: none">
@@ -42,5 +28,3 @@ window.addeventasync = function(){
 
     {% endfor %}
 </ul>
-<img src="/assets/images/pupper.gif" alt="pupper" class="half-filler">
-<div style="text-align: center">The pupper says, "try to click a heckin' cool due date, fren!"</div>
