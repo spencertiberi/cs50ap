@@ -2,7 +2,7 @@
 layout: problempost
 title: "Sentimental"
 date: 2018-02-26 00:08:00 -0400
-due: 2018-03-01 23:59:59
+due: 2018-03-02 23:59:59
 categories: problems
 subcategories: cs50
 image:
